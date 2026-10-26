@@ -4,8 +4,10 @@
   "private": true,
   "description": "Website đặt vé xem phim - PHP + MySQL + TypeScript",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
+    "build": "tsc && tsc -p tsconfig.layout.json && node scripts/build-assets.mjs",
+    "watch": "tsc --watch",
+    "build:layout": "tsc -p tsconfig.layout.json && node scripts/build-assets.mjs",
+    "watch:layout": "node scripts/watch-assets.mjs"
   },
   "devDependencies": {
     "typescript": "^5.6.0"

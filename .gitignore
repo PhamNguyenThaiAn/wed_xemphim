@@ -1,3 +1,11 @@
 node_modules/
 public/uploads/movies/*
 !public/uploads/movies/.gitkeep
+
+# Server session files (outside public web root)
+storage/
+.npm-cache/
+
+# Generated layout JS (source lives in assets/ts)
+assets/js/*.js
+assets/js/*.js.map
